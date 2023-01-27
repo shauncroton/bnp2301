@@ -45,7 +45,7 @@ main()
     }
 
     if (next_integer!=0)
-        return 0;
+        std::cout << "list was not terminated with a zero line" << std::endl;
 
     return 0;
 }

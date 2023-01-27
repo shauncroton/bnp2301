@@ -35,6 +35,10 @@ auto trim(const std::string& str) -> std::string
 inline
 auto as_int(const std::string& str) -> int
 {
+    if( str.empty()) {
+        std::cout << "empty string given for integer conversion " << std::endl;
+        exit(0);
+    }
     char* end;
 
     const auto result = int(std::strtol(str.data(), &end, 10));
